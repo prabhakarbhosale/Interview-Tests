@@ -37,6 +37,11 @@
 		C002B71C1B8B11700062B550 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C002B7051B8B116F0062B550 /* UIRefreshControl+AFNetworking.m */; };
 		C002B71D1B8B11700062B550 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C002B7071B8B116F0062B550 /* UIWebView+AFNetworking.m */; };
 		C002B71F1B8B12B20062B550 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C002B71E1B8B12B20062B550 /* Default.png */; };
+		EBEC646D1C32608700479542 /* WebserviceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC646C1C32608700479542 /* WebserviceAPI.m */; };
+		EBEC64701C326A6400479542 /* CategoryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC646F1C326A6400479542 /* CategoryViewCell.m */; };
+		EBEC64731C327BCE00479542 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC64721C327BCE00479542 /* PhotoObject.m */; };
+		EBEC64761C327C3600479542 /* ParseDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC64751C327C3600479542 /* ParseDataObject.m */; };
+		EBEC64791C327D9500479542 /* CategoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC64781C327D9500479542 /* CategoryObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +116,16 @@
 		C002B7061B8B116F0062B550 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		C002B7071B8B116F0062B550 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		C002B71E1B8B12B20062B550 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EBEC646B1C32608700479542 /* WebserviceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceAPI.h; sourceTree = "<group>"; };
+		EBEC646C1C32608700479542 /* WebserviceAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebserviceAPI.m; sourceTree = "<group>"; };
+		EBEC646E1C326A6400479542 /* CategoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewCell.h; sourceTree = "<group>"; };
+		EBEC646F1C326A6400479542 /* CategoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewCell.m; sourceTree = "<group>"; };
+		EBEC64711C327BCE00479542 /* PhotoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoObject.h; sourceTree = "<group>"; };
+		EBEC64721C327BCE00479542 /* PhotoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoObject.m; sourceTree = "<group>"; };
+		EBEC64741C327C3600479542 /* ParseDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseDataObject.h; sourceTree = "<group>"; };
+		EBEC64751C327C3600479542 /* ParseDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseDataObject.m; sourceTree = "<group>"; };
+		EBEC64771C327D9500479542 /* CategoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryObject.h; sourceTree = "<group>"; };
+		EBEC64781C327D9500479542 /* CategoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +177,14 @@
 				C002B6BC1B8B0FF50062B550 /* Images.xcassets */,
 				C002B6BE1B8B0FF50062B550 /* LaunchScreen.xib */,
 				C002B6AF1B8B0FF50062B550 /* Supporting Files */,
+				EBEC646B1C32608700479542 /* WebserviceAPI.h */,
+				EBEC646C1C32608700479542 /* WebserviceAPI.m */,
+				EBEC646E1C326A6400479542 /* CategoryViewCell.h */,
+				EBEC646F1C326A6400479542 /* CategoryViewCell.m */,
+				EBEC64711C327BCE00479542 /* PhotoObject.h */,
+				EBEC64721C327BCE00479542 /* PhotoObject.m */,
+				EBEC64741C327C3600479542 /* ParseDataObject.h */,
+				EBEC64751C327C3600479542 /* ParseDataObject.m */,
 			);
 			path = PhotoGallery;
 			sourceTree = "<group>";
@@ -171,6 +194,8 @@
 			children = (
 				C002B6B01B8B0FF50062B550 /* Info.plist */,
 				C002B6B11B8B0FF50062B550 /* main.m */,
+				EBEC64771C327D9500479542 /* CategoryObject.h */,
+				EBEC64781C327D9500479542 /* CategoryObject.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -378,9 +403,12 @@
 				C002B71B1B8B11700062B550 /* UIProgressView+AFNetworking.m in Sources */,
 				C002B7091B8B11700062B550 /* AFHTTPRequestOperationManager.m in Sources */,
 				C002B70B1B8B11700062B550 /* AFNetworkReachabilityManager.m in Sources */,
+				EBEC64761C327C3600479542 /* ParseDataObject.m in Sources */,
+				EBEC64791C327D9500479542 /* CategoryObject.m in Sources */,
 				C002B7181B8B11700062B550 /* UIAlertView+AFNetworking.m in Sources */,
 				C002B70F1B8B11700062B550 /* AFURLResponseSerialization.m in Sources */,
 				C002B7141B8B11700062B550 /* SBJsonParser.m in Sources */,
+				EBEC64701C326A6400479542 /* CategoryViewCell.m in Sources */,
 				C002B70D1B8B11700062B550 /* AFURLConnectionOperation.m in Sources */,
 				C002B71A1B8B11700062B550 /* UIImageView+AFNetworking.m in Sources */,
 				C002B70C1B8B11700062B550 /* AFSecurityPolicy.m in Sources */,
@@ -391,9 +419,11 @@
 				C002B70E1B8B11700062B550 /* AFURLRequestSerialization.m in Sources */,
 				C002B7101B8B11700062B550 /* AFURLSessionManager.m in Sources */,
 				C002B6B51B8B0FF50062B550 /* AppDelegate.m in Sources */,
+				EBEC64731C327BCE00479542 /* PhotoObject.m in Sources */,
 				C002B7111B8B11700062B550 /* NSObject+SBJSON.m in Sources */,
 				C002B7121B8B11700062B550 /* NSString+SBJSON.m in Sources */,
 				C002B71D1B8B11700062B550 /* UIWebView+AFNetworking.m in Sources */,
+				EBEC646D1C32608700479542 /* WebserviceAPI.m in Sources */,
 				C002B6B21B8B0FF50062B550 /* main.m in Sources */,
 				C002B7151B8B11700062B550 /* SBJsonWriter.m in Sources */,
 			);

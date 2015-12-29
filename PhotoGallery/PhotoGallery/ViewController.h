@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebserviceAPI.h"
+
+@protocol PhotoPreviewDelegate;
 
 @interface ViewController : UIViewController
+{
+    id <PhotoPreviewDelegate> delegate;
+}
+@property (nonatomic, assign) id <PhotoPreviewDelegate> delegate;
 
+@property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
+
+//-(void)preview:(NSString*)stringUrl;
+@property (weak, nonatomic) IBOutlet UICollectionView *categoryCollectionView;
 
 @end
 
